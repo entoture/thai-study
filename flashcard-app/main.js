@@ -262,7 +262,7 @@ function displayCard() {
                 associations.push(word.associationRu);
             }
             if (associations.length > 0) {
-                backAssociations.textContent = associations.join(' | ');
+                backAssociations.innerHTML = associations.join('<br>');
             }
         }
     }

@@ -1,29 +1,149 @@
 {
   "lessonNumber": 2,
   "vocabulary": [
-    {"thai": "dii", "english": "Good", "associationEn": "Dee-lightful = good.", "associationRu": "«Диво» — что-то хорошее; «di» = good."},
-    {"thai": "khon", "english": "Human (person)", "associationEn": "Comic-Con — a place full of people; khon = person.", "associationRu": "Комик-Кон — много людей; khon = человек."},
-    {"thai": "jay", "english": "Heart", "associationEn": "Jay has a big heart.", "associationRu": "«Джей с большим сердцем» — jay = сердце."},
-    {"thai": "ʔaay", "english": "To be shy", "associationEn": "Ayy… the awkward sound when you're shy.", "associationRu": "«Ай…» стеснительное восклицание — стесняться."},
-    {"thai": "hâa", "english": "Five", "associationEn": "High five — hâa = five.", "associationRu": "«Хай-файв» — hâa = пять."},
-    {"thai": "kâaw", "english": "Nine", "associationEn": "K-9 (K-nine) reminds of nine; kâaw = 9.", "associationRu": "K-9 («кей-найн») на слух — девять; kâaw = 9."},
-    {"thai": "nîi", "english": "This", "associationEn": "Point at your knee: \"this knee\" — nîi = this.", "associationRu": "Укажи на колено (knee): «Вот это» — nîi = это."},
-    {"thai": "chây", "english": "Correct", "associationEn": "Chai? Right! — chây = correct.", "associationRu": "«Чай? Верно!» — chây = правильно."},
-    {"thai": "mǎa", "english": "Dog", "associationEn": "Ma! A dog! — mǎa = dog.", "associationRu": "«Ма! Собака!» — mǎa = собака."},
-    {"thai": "nǎŋsʉ̌ʉ", "english": "Book", "associationEn": "nang-sue — think \"sue papers\" kept in a book.", "associationRu": "«nang-sue»: «сю» как «сюжет» книги — книга."},
-    {"thai": "khâw", "english": "To enter", "associationEn": "Like \"cow\" entering the barn — khâw = enter.", "associationRu": "«Коровa входит в сарай» — khâw = войти."},
-    {"thai": "khǎw", "english": "Animal horn", "associationEn": "Cow's horn — khǎw = animal horn.", "associationRu": "Рог коровы — khǎw = рог."},
-    {"thai": "nʉ̀ŋ", "english": "One", "associationEn": "Number one — nʉ̀ŋ.", "associationRu": "Номер один — nʉ̀ŋ."},
-    {"thai": "sìi", "english": "Four", "associationEn": "See four — sìi = four.", "associationRu": "«See (си) четырёх» — sìi = четыре."},
-    {"thai": "jèt", "english": "Seven", "associationEn": "Jet fighter number 7 — jèt = seven.", "associationRu": "«Джет» с номером 7 — jèt = семь."},
-    {"thai": "jà", "english": "Will", "associationEn": "Ja, I will. — jà marks the future.", "associationRu": "«Я буду» — jà = частица будущего."},
-    {"thai": "fáa", "english": "Blue", "associationEn": "Far sky is blue — fáa = blue.", "associationRu": "Смотрим в небо — синее; fáa = синий."},
-    {"thai": "náam", "english": "Water", "associationEn": "Nah, I'm thirsty — naam = water.", "associationRu": "«Наам — напиться» — вода."},
-    {"thai": "cháy", "english": "To use", "associationEn": "Use chai to brew tea — cháy = to use.", "associationRu": "Чай используем, чтобы заварить — использовать."},
-    {"thai": "rúu", "english": "To know", "associationEn": "Roo (the kangaroo) knows — rúu = know.", "associationRu": "Кенгуру (Roo) всё знает — знать."},
-    {"thai": "sǔuŋ", "english": "Tall", "associationEn": "sǔŋ ~ \"so long\" — tall/long.", "associationRu": "«Суу-унг» ~ «со лонг» — высокий/длинный."},
-    {"thai": "khàw", "english": "Knee", "associationEn": "kowtow uses knees — khàw = knee.", "associationRu": "Коутао — на колени; khàw = колено."},
-    {"thai": "kháw", "english": "He / she", "associationEn": "Point at a person: \"that one\" — kháw = he/she.", "associationRu": "Указываем на человека: «тот» — kháw = он/она."},
-    {"thai": "rúŋ", "english": "Rainbow", "associationEn": "Rung — like a ring/arch of colors — rainbow.", "associationRu": "«Ранг/ринг» — дуга из цветов — радуга."}
+    {
+      "thai": "dii",
+      "english": "Good",
+      "associationEn": "Think ‘good deed’—‘dii’ sounds like ‘dee’ in ‘deed’ = good.",
+      "associationRu": "Удовлетворённый протяжный «диии…» — так звучит «хорошо»; dii = хорошо."
+    },
+    {
+      "thai": "khon",
+      "english": "Human (person)",
+      "associationEn": "Picture Comic-Con packed with PEOPLE—‘khon’ = person.",
+      "associationRu": "КОНтингент — это люди; khon = человек."
+    },
+    {
+      "thai": "jay",
+      "english": "Heart",
+      "associationEn": "A Valentine signed ‘Jay ♥’—‘jay/jai’ = heart.",
+      "associationRu": "Буква J на открытке дорисована до сердечка: «джей» = сердце."
+    },
+    {
+      "thai": "ʔaay",
+      "english": "To be shy",
+      "associationEn": "When embarrassed you go ‘aaay…’ and look away—ʔaay = shy.",
+      "associationRu": "Стыдно — протягиваешь «ааай…» и отводишь взгляд — стесняться."
+    },
+    {
+      "thai": "hâa",
+      "english": "Five",
+      "associationEn": "High five! Shout ‘haa!’—and in Thai ‘555’ = hahaha; hâa = 5.",
+      "associationRu": "В тайских чатах «555» читают «ха-ха-ха»; hâa = 5."
+    },
+    {
+      "thai": "kâaw",
+      "english": "Nine",
+      "associationEn": "K-9 (‘k-nine’) → nine—kâaw = 9.",
+      "associationRu": "«Кáо» по-тайски ещё и «шаг» — сделай шаг на 9-ю ступень; kâaw = 9."
+    },
+    {
+      "thai": "nîi",
+      "english": "This",
+      "associationEn": "Point to your knee: ‘this knee’—nîi = this.",
+      "associationRu": "Тянешь палец к предмету прямо перед собой: «ни-и!» — вот ЭТО; nîi = это."
+    },
+    {
+      "thai": "chây",
+      "english": "Correct",
+      "associationEn": "Someone asks ‘Chai?’—you say ‘Correct!’ chây = correct.",
+      "associationRu": "Поставь галочку на пакетике ЧАЯ — ответ верный; chây = правильно."
+    },
+    {
+      "thai": "mǎa",
+      "english": "Dog",
+      "associationEn": "A dog runs up—‘Ma!’—mǎa = dog.",
+      "associationRu": "Пёс тянет жалобное «ма-а!» — mǎa = собака."
+    },
+    {
+      "thai": "nǎŋsʉ̌ʉ",
+      "english": "Book",
+      "associationEn": "Open your ‘nang-sue’ (sounds like ‘nahng soo’)—your book.",
+      "associationRu": "Себе «наношу» закладки в книгу: «нан-сю» ~ nǎŋsʉ̌ʉ — книга."
+    },
+    {
+      "thai": "khâw",
+      "english": "To enter",
+      "associationEn": "A cow ENTERS the barn—khâw = enter (falling tone like going in).",
+      "associationRu": "Открываю дверь в «кха́ос» и ВХОЖУ — khâw = войти."
+    },
+    {
+      "thai": "khǎw",
+      "english": "Animal horn",
+      "associationEn": "Picture a cow’s horn curving UP—khǎw = horn (rising tone).",
+      "associationRu": "Рог поднимается вверх, как восходящий тон: «кха́у» — khǎw = рог."
+    },
+    {
+      "thai": "nʉ̀ŋ",
+      "english": "One",
+      "associationEn": "Number ONE—say ‘nueng’ = 1.",
+      "associationRu": "«Нынче я один» — nʉ̀ŋ = 1."
+    },
+    {
+      "thai": "sìi",
+      "english": "Four",
+      "associationEn": "SEE four sides of a square—sìi = 4.",
+      "associationRu": "«Сиии» — произносим, глядя на 4 угла квадрата; sìi = четыре."
+    },
+    {
+      "thai": "jèt",
+      "english": "Seven",
+      "associationEn": "A fighter JET with number 7—jèt = 7.",
+      "associationRu": "На реактивном «джете» крупная цифра 7 — jèt = семь."
+    },
+    {
+      "thai": "jà",
+      "english": "Will",
+      "associationEn": "'Ja, I will.'—jà marks the future.",
+      "associationRu": "Короткое «джа!» — решительно: «сделаю, буду»; jà — частица будущего."
+    },
+    {
+      "thai": "fáa",
+      "english": "Blue",
+      "associationEn": "Look at the far sky—‘faa’—blue/sky.",
+      "associationRu": "Глянул в небо — ахнул «фа-а!»; fáa = синий/небо."
+    },
+    {
+      "thai": "náam",
+      "english": "Water",
+      "associationEn": "Your friend ‘Nam’ splashes WATER—náam = water.",
+      "associationRu": "НА́Мок бывает только от воды; náam = вода."
+    },
+    {
+      "thai": "cháy",
+      "english": "To use",
+      "associationEn": "You USE a kettle to make chai—cháy = to use.",
+      "associationRu": "Чтобы сварить ЧАЙ, нужно ИСПОЛЬЗОВАТЬ чайник — cháy = использовать."
+    },
+    {
+      "thai": "rúu",
+      "english": "To know",
+      "associationEn": "Roo the kangaroo KNOWS—rúu = know.",
+      "associationRu": "Крошка Ру (из Винни-Пуха) всё знает: «ру» → знать; rúu = знать."
+    },
+    {
+      "thai": "sǔuŋ",
+      "english": "Tall",
+      "associationEn": "Stretch up saying ‘suuung’—tall/high.",
+      "associationRu": "Тянешься выше потолка: «су-у-уŋ!» — высокий; sǔuŋ = высокий."
+    },
+    {
+      "thai": "khàw",
+      "english": "Knee",
+      "associationEn": "Kowtow—down on your KNEES—khàw = knee.",
+      "associationRu": "Упал — «хау!» — ударился коленом; khàw = колено."
+    },
+    {
+      "thai": "kháw",
+      "english": "He / she",
+      "associationEn": "Raise your finger HIGH to point at someone—kháw = he/she.",
+      "associationRu": "Палец ВЫСОКО вверх: «кха́у» — он/она; kháw = он/она."
+    },
+    {
+      "thai": "rúŋ",
+      "english": "Rainbow",
+      "associationEn": "A ‘rung’ like a colored ring/arch—rúŋ = rainbow.",
+      "associationRu": "После дождя: «ру-у-нг!» — и на небе радуга; rúŋ = радуга."
+    }
   ]
 }
