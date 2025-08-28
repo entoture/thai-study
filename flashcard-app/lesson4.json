@@ -3,67 +3,99 @@
   "vocabulary": [
     {
       "thai": "chʉ̂ʉ",
-      "english": "Name"
+      "english": "Name",
+      "associationEn": "CHEW your name tag",
+      "associationRu": "ЧЬЁ имя?"
     },
     {
       "thai": "chʉ̂ʉ lên",
-      "english": "Nickname"
+      "english": "Nickname",
+      "associationEn": "CHEW LANE - nickname for the eating street",
+      "associationRu": "ЧЬЁ ЛЕНь - прозвище ленивого"
     },
     {
       "thai": "ʔaray",
-      "english": "What?"
+      "english": "What?",
+      "associationEn": "A RAY of light - what is that?",
+      "associationRu": "А РАЙ это что?"
     },
     {
       "thai": "khon",
-      "english": "Person / people"
+      "english": "Person / people",
+      "associationEn": "traffic CONE shaped like a person",
+      "associationRu": "КОНь - человек на коне"
     },
     {
       "thai": "prathêet",
-      "english": "Country"
+      "english": "Country",
+      "associationEn": "PRAy for your counTEET (country)",
+      "associationRu": "ПРАдед ТЕТи из другой страны"
     },
     {
       "thai": "ʔaŋkrìt",
-      "english": "England / English"
+      "english": "England / English",
+      "associationEn": "ANGlo-CRIT (English critic)",
+      "associationRu": "АНГлийский КРИТик"
     },
     {
       "thai": "yindii thîi dâay rúujàk",
-      "english": "Nice to meet you"
+      "english": "Nice to meet you",
+      "associationEn": "YIN-DEE TEE DIE ROO-JACK - Yin's tea day with Jack",
+      "associationRu": "ИНЬ-ДИ ТИ ДАЙ РУ-ЖАК - приятно познакомиться с Жаком"
     },
     {
       "thai": "mʉ̌an kan",
-      "english": "Too, as well"
+      "english": "Too, as well",
+      "associationEn": "MOON GUN - me too, I have a moon gun",
+      "associationRu": "МУЖАН КАН - мужик тоже канает"
     },
     {
       "thai": "sabaay dii",
-      "english": "Fine, well"
+      "english": "Fine, well",
+      "associationEn": "SUB-BYE DEE - submarine goodbye, all is well",
+      "associationRu": "САБАЙ ДИ - собаки дивно живут"
     },
     {
       "thai": "lɛ́ɛw khun là",
-      "english": "What about you?"
+      "english": "What about you?",
+      "associationEn": "LAW COON LA - law student, what about you?",
+      "associationRu": "ЛЕВ КУН ЛА - лев кун-фу, а ты?"
     },
     {
       "thai": "dii",
-      "english": "Good"
+      "english": "Good",
+      "associationEn": "DEE-licious is good",
+      "associationRu": "ДИ-во хорошо!"
     },
     {
       "thai": "tɔ̂ŋ",
-      "english": "Must / have to"
+      "english": "Must / have to",
+      "associationEn": "TONG grip - must hold tight",
+      "associationRu": "ТОНна - должен поднять"
     },
     {
       "thai": "pay",
-      "english": "To go"
+      "english": "To go",
+      "associationEn": "PIE shop - let's go get pie!",
+      "associationRu": "ПАЙ! - иди!"
     },
     {
       "thai": "...lɛ́ɛw",
-      "english": "Already"
+      "english": "Already",
+      "associationEn": "LAW already passed",
+      "associationRu": "ЛЕВ уже здесь"
     },
     {
       "thai": "wáy khuy kan mày",
-      "english": "Talk to you later"
+      "english": "Talk to you later",
+      "associationEn": "WHY QUIT CAN MY - why quit? we can talk later",
+      "associationRu": "ВАЙ КУЙ КАН МАЙ - вай-фай куй канал май"
     },
     {
       "thai": "lɛ́ɛw jəə kan",
-      "english": "See you"
+      "english": "See you",
+      "associationEn": "LAW JERR GUN - lawyer with a gun, see you!",
+      "associationRu": "ЛЕВ ЖЁ КАН - лев же канает, увидимся"
     }
   ],
   "phrases": [
