@@ -2,18 +2,21 @@ import './style.css';
 import lesson1Data from './lesson1.json';
 import lesson2Data from './lesson2.json';
 import lesson3Data from './lesson3.json';
+import lesson4Data from './lesson4.json';
 
 // Store lesson data
 const lessonData = {
     1: lesson1Data,
     2: lesson2Data,
-    3: lesson3Data
+    3: lesson3Data,
+    4: lesson4Data
 };
 
 // State management
 let selectedLessons = new Set();
 let selectedMode = 'ordered';
 let translationDirection = 'thai-english';
+let selectedContentType = 'words';
 let showAssociations = false;
 let associationLanguages = new Set();
 let currentWords = [];
@@ -62,16 +65,26 @@ function init() {
 function initializeLessonCheckboxes() {
     lessonCheckboxes.innerHTML = '';
     
-    [1, 2, 3].forEach(lessonNum => {
+    [1, 2, 3, 4].forEach(lessonNum => {
         const data = lessonData[lessonNum];
         const wordCount = data && data.vocabulary ? data.vocabulary.length : 0;
+        const phraseCount = data && data.phrases ? data.phrases.length : 0;
         
         const label = document.createElement('label');
         label.className = 'lesson-checkbox';
+        let countText = '';
+        if (wordCount > 0 && phraseCount > 0) {
+            countText = `${wordCount} words, ${phraseCount} phrases`;
+        } else if (wordCount > 0) {
+            countText = `${wordCount} words`;
+        } else if (phraseCount > 0) {
+            countText = `${phraseCount} phrases`;
+        }
+        
         label.innerHTML = `
             <input type="checkbox" value="${lessonNum}" 
                 ${selectedLessons.has(lessonNum) ? 'checked' : ''}>
-            <span>Lesson ${lessonNum} (${wordCount} words)</span>
+            <span>Lesson ${lessonNum} (${countText})</span>
         `;
         lessonCheckboxes.appendChild(label);
     });
@@ -136,6 +149,9 @@ function setupEventListeners() {
         resetStudySession();
     });
     
+    // Add click/tap to flip the flashcard
+    flashcard.addEventListener('click', flipCard);
+    
     quizSubmit.addEventListener('click', checkQuizAnswer);
     quizInput.addEventListener('keypress', (e) => {
         if (e.key === 'Enter') checkQuizAnswer();
@@ -174,9 +190,9 @@ function startStudying() {
     const modeRadio = document.querySelector('input[name="studyMode"]:checked');
     selectedMode = modeRadio ? modeRadio.value : 'ordered';
     
-    currentWords = getSelectedWords();
+    currentWords = getSelectedContent();
     if (currentWords.length === 0) {
-        alert('No words available! Please select lessons in Settings.');
+        alert('No content available! Please select lessons in Settings.');
         return;
     }
     
@@ -219,47 +235,107 @@ function resetStudySession() {
     quizSubmit.style.display = 'inline-block';
 }
 
-// Get selected words
-function getSelectedWords() {
-    const words = [];
+// Get selected content based on content type setting
+function getSelectedContent() {
+    const content = [];
     selectedLessons.forEach(lessonNum => {
         const data = lessonData[lessonNum];
-        if (data && data.vocabulary) {
-            data.vocabulary.forEach(word => {
-                words.push(word);
+        if (!data) return;
+        
+        // Add words if selected
+        if ((selectedContentType === 'words' || selectedContentType === 'both') && data.vocabulary) {
+            data.vocabulary.forEach(item => {
+                content.push({ ...item, type: 'word' });
+            });
+        }
+        
+        // Add phrases if selected
+        if ((selectedContentType === 'phrases' || selectedContentType === 'both') && data.phrases) {
+            data.phrases.forEach(item => {
+                content.push({ ...item, type: 'phrase' });
             });
         }
     });
-    return words;
+    return content;
+}
+
+// Fit text to card by adjusting font size
+function fitTextToCard(cardElement, textElement) {
+    if (!textElement || !cardElement) return;
+    
+    // Reset font size to maximum
+    textElement.style.fontSize = '2.5em';
+    
+    // Get the container height (card height minus padding)
+    const containerHeight = cardElement.offsetHeight - 40; // 40px for padding
+    
+    // Start with max font size and reduce until it fits
+    let fontSize = 2.5;
+    const minFontSize = 1.0;
+    const step = 0.1;
+    
+    // Check if content fits
+    while (textElement.scrollHeight > containerHeight && fontSize > minFontSize) {
+        fontSize -= step;
+        textElement.style.fontSize = `${fontSize}em`;
+    }
 }
 
 // Display current card
 function displayCard() {
     if (currentWords.length === 0) return;
     
-    const word = currentWords[currentIndex];
+    const item = currentWords[currentIndex];
     
     // Clear associations first
     frontAssociations.textContent = '';
     backAssociations.textContent = '';
     
+    // Handle phrases (which might have multiline content)
+    const formatText = (text) => {
+        if (!text) return '';
+        // Replace newlines with <br> for phrases
+        return text.includes('\n') ? text.replace(/\n/g, '<br>') : text;
+    };
+    
     // Swap front/back based on translation direction
     if (translationDirection === 'thai-english') {
-        frontText.textContent = word.thai;
-        backText.textContent = word.english;
+        // Use innerHTML for phrases to preserve line breaks
+        if (item.thai && item.thai.includes('\n')) {
+            frontText.innerHTML = formatText(item.thai);
+        } else {
+            frontText.textContent = item.thai;
+        }
+        
+        if (item.english && item.english.includes('\n')) {
+            backText.innerHTML = formatText(item.english);
+        } else {
+            backText.textContent = item.english;
+        }
         // No associations shown in Thai → English direction (would spoil the answer)
     } else {
-        frontText.textContent = word.english;
-        backText.textContent = word.thai;
+        // Use innerHTML for phrases to preserve line breaks
+        if (item.english && item.english.includes('\n')) {
+            frontText.innerHTML = formatText(item.english);
+        } else {
+            frontText.textContent = item.english;
+        }
+        
+        if (item.thai && item.thai.includes('\n')) {
+            backText.innerHTML = formatText(item.thai);
+        } else {
+            backText.textContent = item.thai;
+        }
         
         // Show associations only on the Thai side (back) in English → Thai direction
-        if (showAssociations && associationLanguages.size > 0) {
+        // Only for words, not phrases
+        if (item.type === 'word' && showAssociations && associationLanguages.size > 0) {
             const associations = [];
-            if (associationLanguages.has('en') && word.associationEn) {
-                associations.push(word.associationEn);
+            if (associationLanguages.has('en') && item.associationEn) {
+                associations.push(item.associationEn);
             }
-            if (associationLanguages.has('ru') && word.associationRu) {
-                associations.push(word.associationRu);
+            if (associationLanguages.has('ru') && item.associationRu) {
+                associations.push(item.associationRu);
             }
             if (associations.length > 0) {
                 backAssociations.innerHTML = associations.join('<br>');
@@ -269,6 +345,12 @@ function displayCard() {
     
     flashcard.classList.remove('flipped');
     showingFront = true;
+    
+    // Fit text to cards
+    const frontCard = document.querySelector('.flashcard-front');
+    const backCard = document.querySelector('.flashcard-back');
+    fitTextToCard(frontCard, frontText);
+    fitTextToCard(backCard, backText);
     
     progressDiv.textContent = `${currentIndex + 1} / ${currentWords.length}`;
     
@@ -283,15 +365,43 @@ function displayQuizQuestion() {
         return;
     }
     
-    const word = currentWords[currentIndex];
+    const item = currentWords[currentIndex];
+    const questionElement = document.querySelector('.quiz-question');
     
     // Show question based on translation direction
     if (translationDirection === 'thai-english') {
-        document.querySelector('.quiz-question').textContent = word.thai;
+        // Handle multiline content for phrases
+        if (item.thai && item.thai.includes('\n')) {
+            questionElement.innerHTML = item.thai.replace(/\n/g, '<br>');
+        } else {
+            questionElement.textContent = item.thai;
+        }
         quizInput.placeholder = 'Enter English translation...';
     } else {
-        document.querySelector('.quiz-question').textContent = word.english;
+        // Handle multiline content for phrases
+        if (item.english && item.english.includes('\n')) {
+            questionElement.innerHTML = item.english.replace(/\n/g, '<br>');
+        } else {
+            questionElement.textContent = item.english;
+        }
         quizInput.placeholder = 'Enter Thai translation (phonetic)...';
+    }
+    
+    // Fit quiz question text
+    const quizContainer = document.querySelector('.quiz-mode');
+    if (quizContainer) {
+        // Reset and adjust font size for quiz question
+        questionElement.style.fontSize = '2.5em';
+        const maxHeight = 150; // Maximum height for quiz question area
+        
+        let fontSize = 2.5;
+        const minFontSize = 1.2;
+        const step = 0.1;
+        
+        while (questionElement.scrollHeight > maxHeight && fontSize > minFontSize) {
+            fontSize -= step;
+            questionElement.style.fontSize = `${fontSize}em`;
+        }
     }
     
     quizInput.value = '';
@@ -304,16 +414,17 @@ function displayQuizQuestion() {
 
 // Check quiz answer
 function checkQuizAnswer() {
-    const word = currentWords[currentIndex];
+    const item = currentWords[currentIndex];
     const answer = quizInput.value.trim().toLowerCase();
     
     let correct, correctDisplay;
     if (translationDirection === 'thai-english') {
-        correct = word.english.toLowerCase();
-        correctDisplay = word.english;
+        // For phrases, we might need to be more flexible with the answer
+        correct = item.english.toLowerCase();
+        correctDisplay = item.english;
     } else {
-        correct = word.thai.toLowerCase();
-        correctDisplay = word.thai;
+        correct = item.thai.toLowerCase();
+        correctDisplay = item.thai;
     }
     
     attempts++;
@@ -376,6 +487,13 @@ function savePreferences() {
     localStorage.setItem('selectedMode', selectedMode);
     localStorage.setItem('translationDirection', translationDirection);
     
+    // Update content type from radio buttons
+    const contentRadio = document.querySelector('input[name="contentType"]:checked');
+    if (contentRadio) {
+        selectedContentType = contentRadio.value;
+        localStorage.setItem('selectedContentType', selectedContentType);
+    }
+    
     // Update selected mode from radio buttons
     const modeRadio = document.querySelector('input[name="studyMode"]:checked');
     if (modeRadio) {
@@ -406,11 +524,20 @@ function loadPreferences() {
     const savedLessons = localStorage.getItem('selectedLessons');
     const savedMode = localStorage.getItem('selectedMode');
     const savedDirection = localStorage.getItem('translationDirection');
+    const savedContentType = localStorage.getItem('selectedContentType');
     const savedShowAssociations = localStorage.getItem('showAssociations');
     const savedAssociationLanguages = localStorage.getItem('associationLanguages');
     
     if (savedLessons) {
         selectedLessons = new Set(JSON.parse(savedLessons));
+    }
+    
+    if (savedContentType) {
+        selectedContentType = savedContentType;
+        const contentRadio = document.querySelector(`input[name="contentType"][value="${savedContentType}"]`);
+        if (contentRadio) {
+            contentRadio.checked = true;
+        }
     }
     
     if (savedMode) {

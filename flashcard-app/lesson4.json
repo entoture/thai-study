@@ -1,0 +1,115 @@
+{
+  "lessonNumber": 4,
+  "vocabulary": [
+    {
+      "thai": "chʉ̂ʉ",
+      "english": "Name"
+    },
+    {
+      "thai": "chʉ̂ʉ lên",
+      "english": "Nickname"
+    },
+    {
+      "thai": "ʔaray",
+      "english": "What?"
+    },
+    {
+      "thai": "khon",
+      "english": "Person / people"
+    },
+    {
+      "thai": "prathêet",
+      "english": "Country"
+    },
+    {
+      "thai": "ʔaŋkrìt",
+      "english": "England / English"
+    },
+    {
+      "thai": "yindii thîi dâay rúujàk",
+      "english": "Nice to meet you"
+    },
+    {
+      "thai": "mʉ̌an kan",
+      "english": "Too, as well"
+    },
+    {
+      "thai": "sabaay dii",
+      "english": "Fine, well"
+    },
+    {
+      "thai": "lɛ́ɛw khun là",
+      "english": "What about you?"
+    },
+    {
+      "thai": "dii",
+      "english": "Good"
+    },
+    {
+      "thai": "tɔ̂ŋ",
+      "english": "Must / have to"
+    },
+    {
+      "thai": "pay",
+      "english": "To go"
+    },
+    {
+      "thai": "...lɛ́ɛw",
+      "english": "Already"
+    },
+    {
+      "thai": "wáy khuy kan mày",
+      "english": "Talk to you later"
+    },
+    {
+      "thai": "lɛ́ɛw jəə kan",
+      "english": "See you"
+    }
+  ],
+  "phrases": [
+    {
+      "thai": "Q: kin khâaw rʉ́yaŋ (eat rice yet)\n(+) kin lɛɛw (eat already)\n(-) yaŋ mâi kin (yet not eating)",
+      "english": "Q: Have you eaten yet?\nA: +/-"
+    },
+    {
+      "thai": "Q: pen yaŋŋay bâaŋ (to be how some)\n(+): sa baay dii (kh.)\n(-): mâi sa baay (kh.)",
+      "english": "Q: How are you doing?\nA: +/-"
+    },
+    {
+      "thai": "Q: pay nǎy maa (go where come)\nA: pay ___ maa (kh.)",
+      "english": "Q: Where have you been?\nA: I've been to ___"
+    },
+    {
+      "thai": "khun chʉ̂ʉ ʔaray\nphǒm chʉ̂ʉ  ___",
+      "english": "What is your name?\nMy name is ___"
+    },
+    {
+      "thai": "khun pen khon (prathêet) ʔaray (you to be person/people country what)\nphǒm pen khon ___",
+      "english": "Which nationality are you?\nI'm ___"
+    },
+    {
+      "thai": "Q1: sabaay dii mây\nQ2: pen yaŋŋay bâaŋ (to be how some)\nA: sabaay dii mâak\nA: sabaay dii\nA: kɔ̂ɔ dii\nA: rʉ̂ay rʉ̂ay\nA: mây khɔ̂y dii\nA: yêe mâak",
+      "english": "Q: How are you? (2 options)\nA: Great, very well\nA: Fine, good\nA: Okay, alright\nA: So so\nA: Pretty bad\nA: Terrible"
+    },
+    {
+      "thai": "khɔɔthɔ̂ɔt; phǒm tɔ̂ŋ pay lɛ́ɛw",
+      "english": "Excuse me; I have to go now"
+    },
+    {
+      "thai": "khɔɔthɔ̂ɔt; phǒm mii thúrá",
+      "english": "Excuse me; I have some errands to run"
+    },
+    {
+      "thai": "khɔɔthɔ̂ɔt; (lɛ́ɛw) jəə kan",
+      "english": "Excuse me; See you again"
+    },
+    {
+      "thai": "khɔɔthɔ̂ɔt; wáy khuy kan mày",
+      "english": "Excuse me; Talk to you later"
+    },
+    {
+      "thai": "chôok dii (kh.)",
+      "english": "Good luck"
+    }
+  ]
+}

@@ -216,7 +216,7 @@ h2 {
 .flashcard {
     position: relative;
     width: 100%;
-    height: 300px;
+    height: 360px;
     transform-style: preserve-3d;
     transition: transform 0.6s;
     cursor: pointer;
@@ -236,8 +236,9 @@ h2 {
     align-items: center;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    font-size: 2.5em;
     font-weight: bold;
+    overflow: hidden;
+    padding: 20px;
 }
 
 .flashcard-front {
@@ -256,8 +257,12 @@ h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
     height: 100%;
     text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
 }
 
 .association-text {
@@ -317,7 +322,6 @@ h2 {
 }
 
 .quiz-question {
-    font-size: 2.5em;
     font-weight: bold;
     color: #2d3748;
     margin-bottom: 30px;
@@ -325,6 +329,10 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0 20px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-align: center;
 }
 
 #quizInput {
@@ -406,16 +414,10 @@ h2 {
     }
     
     .flashcard {
-        height: 250px;
+        height: 300px;
     }
     
-    .flashcard-face {
-        font-size: 2em;
-    }
     
-    .quiz-question {
-        font-size: 2em;
-    }
     
     .navigation {
         flex-direction: column;
