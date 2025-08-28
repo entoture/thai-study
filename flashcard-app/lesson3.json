@@ -1,0 +1,29 @@
+{
+  "lessonNumber": 3,
+  "vocabulary": [
+    {"thai": "pay", "english": "To go", "associationEn": "Pay and go.", "associationRu": "«Pay — заплатил и пошёл.»"},
+    {"thai": "kin", "english": "To eat", "associationEn": "Eat with your kin (family).", "associationRu": "«Кин» как «кино» — едим попкорн в кино."},
+    {"thai": "sʉ́ʉ", "english": "To buy", "associationEn": "Sʉ́ʉ ~ suit — you buy a suit.", "associationRu": "«Sʉ́ʉ» ~ «suit» — костюм покупают."},
+    {"thai": "rian", "english": "To learn (study)", "associationEn": "Rian — re-read your notes to learn.", "associationRu": "Rian ~ re-read конспект — учиться."},
+    {"thai": "chɔ̂ɔp", "english": "To like", "associationEn": "Chôop ~ choose what you like.", "associationRu": "chôop ~ choose — то, что нравится."},
+    {"thai": "mii", "english": "To have", "associationEn": "Me — I have it.", "associationRu": "«ми» — у меня есть (имею)."},
+    {"thai": "duu", "english": "To watch", "associationEn": "Two \"u\" like two eyes watching.", "associationRu": "Две «u» как два глаза — смотреть."},
+    {"thai": "thamŋaan", "english": "To work", "associationEn": "Tham + ŋaan = do work; thumb on, get to work.", "associationRu": "Tham + ŋaan = «делать работу» — работать."},
+    {"thai": "phûut", "english": "To speak", "associationEn": "Put (phût) words out — speak.", "associationRu": "PUT слова наружу — говорить."},
+    {"thai": "maa", "english": "To come", "associationEn": "Ma, come here! — maa = come.", "associationRu": "«Ма, иди сюда!» — maa = прийти."},
+    {"thai": "jəə", "english": "To meet", "associationEn": "Jerrr— I met Jerry. Meeting someone.", "associationRu": "«Джё — встретил Джо» — встретиться."},
+    {"thai": "nɔɔn", "english": "To sleep", "associationEn": "Nɔɔn sounds like a long yawn — time to sleep.", "associationRu": "«Нооон» как протяжный зевок — спать."},
+    {"thai": "yâak", "english": "Difficult", "associationEn": "Yak trails are difficult — yâak.", "associationRu": "Як и горы — трудно — yâak."},
+    {"thai": "yây", "english": "Big", "associationEn": "Yai — a big \"yay!\".", "associationRu": "«Яй!» — радостно и по‑крупному — большое."},
+    {"thai": "kèŋ", "english": "Good at something", "associationEn": "Kèŋ ~ king — top, skilled.", "associationRu": "Kèŋ ~ king — силён, мастерски."},
+    {"thai": "phèt", "english": "Spicy", "associationEn": "Phet ~ pepper — spicy.", "associationRu": "Phet ~ перец — остро."},
+    {"thai": "ʔarɔ̀y", "english": "Tasty (delicious)", "associationEn": "Aroi — \"ah, joy!\" — delicious.", "associationRu": "Aroi — «ах, ой, вкусно!» — вкусно."},
+    {"thai": "rɔ́ɔn", "english": "Hot", "associationEn": "Roast — rɔ́ɔn — hot.", "associationRu": "Roast ~ rɔɔn — жарко."},
+    {"thai": "ŋâay", "english": "Easy", "associationEn": "ŋâay — \"nah, easy\" to do.", "associationRu": "Нга-ай — «ай, пустяки!» — легко."},
+    {"thai": "lék", "english": "Small", "associationEn": "Lek ~ less — small.", "associationRu": "Lek ~ less — маленький."},
+    {"thai": "dii", "english": "Good", "associationEn": "Dee-lightful = good.", "associationRu": "«Диво» — что-то хорошее; «di» = good."},
+    {"thai": "thùuk", "english": "Cheap / Correct", "associationEn": "Thùuk — \"took\" a bargain = cheap; sounds like \"true\" = correct.", "associationRu": "thùuk ~ took — дёшево; ~ true — верно."},
+    {"thai": "sǔay", "english": "Beautiful", "associationEn": "Sǔay ~ sway gracefully — beautiful.", "associationRu": "Sǔay ~ «свей» — красиво, изящно."},
+    {"thai": "jaydii", "english": "Kind", "associationEn": "Jai (heart) + dii (good) = kind-hearted.", "associationRu": "Jai (сердце) + dii (хороший) = добрый."}
+  ]
+}

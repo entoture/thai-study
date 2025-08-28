@@ -1,0 +1,30 @@
+{
+  "lessonNumber": 1,
+  "vocabulary": [
+    {"thai": "mʉʉ", "english": "Hand", "associationEn": "Moo—you use your hand to milk the cow.", "associationRu": "Му-у — корову доят рукой; «mʉʉ» = рука."},
+    {"thai": "chaa", "english": "Tea", "associationEn": "Cha/chai = tea in many places; easy match.", "associationRu": "«ча» как «чай» — прямое совпадение."},
+    {"thai": "dii", "english": "Good", "associationEn": "Dee-lightful = good.", "associationRu": "«Диво» — что-то хорошее; «di» = good."},
+    {"thai": "mii", "english": "To have", "associationEn": "Me — I have it.", "associationRu": "«ми» — у меня есть (имею)."},
+    {"thai": "rɔɔ", "english": "To wait", "associationEn": "Rooo… drawing the sound out like waiting.", "associationRu": "Р-ооо — тянем звук, как когда ждём."},
+    {"thai": "maa", "english": "To come", "associationEn": "Ma, come here! — maa = come.", "associationRu": "«Ма, иди сюда!» — maa = прийти."},
+    {"thai": "khruu", "english": "Teacher", "associationEn": "Rhymes with guru — a teacher.", "associationRu": "Похоже на «гуру» — учитель."},
+    {"thai": "jəə", "english": "To meet", "associationEn": "Jerrr— I met Jerry. Meeting someone.", "associationRu": "«Джё — встретил Джо» — встретиться."},
+    {"thai": "duu", "english": "To look", "associationEn": "Du(u) — the two \"u\" look like two eyes looking.", "associationRu": "Две «u» как два глаза — смотреть."},
+    {"thai": "thoo", "english": "To call", "associationEn": "Two \"oo\" like \"oo-oo\" phone tone — to call.", "associationRu": "«Ту-ту» как гудки — звонить."},
+    {"thai": "kin", "english": "To eat", "associationEn": "Eat with your kin (family).", "associationRu": "«Кин» как «кино» — едим попкорн в кино."},
+    {"thai": "tham", "english": "To do", "associationEn": "Your thumb helps you do things.", "associationRu": "«Там» — делаем это «там». Делать."},
+    {"thai": "jam", "english": "To remember", "associationEn": "Jam is sticky — sticks in memory.", "associationRu": "Джем липкий — прилипает к памяти."},
+    {"thai": "ŋaan", "english": "Work", "associationEn": "Ng— a grunt you make while working.", "associationRu": "«Нг-а-ан…» тяжёлый вздох от работы — работать."},
+    {"thai": "dəən", "english": "To walk", "associationEn": "You \"earn\" steps as you walk — dəən.", "associationRu": "«Дэн идёт» — представить Дэна шагающим."},
+    {"thai": "phɛɛn", "english": "Expensive", "associationEn": "Sounds like \"pain\" — painful price = expensive.", "associationRu": "Больно платить — «pain» — значит дорого."},
+    {"thai": "mia", "english": "Wife (casual)", "associationEn": "Mia — a woman's name; my wife.", "associationRu": "«mia» звучит как «моя (жена)»."},
+    {"thai": "wua", "english": "Cow", "associationEn": "Wu-a — like a soft \"moo-a\" of a cow.", "associationRu": "«ву-а» — похоже на «му-у» коровы."},
+    {"thai": "daŋ", "english": "Loud", "associationEn": "Dang! when a loud noise hits.", "associationRu": "«Данг!» — как громкий удар."},
+    {"thai": "wan", "english": "Day", "associationEn": "Wan ~ one — one day.", "associationRu": "«wan» ~ «one» — один день."},
+    {"thai": "khun", "english": "You", "associationEn": "Khun, you? addressing someone politely.", "associationRu": "«-кун» как обращение — это «ты/вы»."},
+    {"thai": "mʉan", "english": "Month", "associationEn": "Moon → month; mʉan sounds like moon.", "associationRu": "Луна → месяц; «mʉan» похоже на «moon»."},
+    {"thai": "muay", "english": "Boxing", "associationEn": "Muay Thai = boxing — easy.", "associationRu": "Муай-тай — это бокс/единоборство."},
+    {"thai": "maw", "english": "Drunk", "associationEn": "Too much in your maw (mouth) — drunk.", "associationRu": "«Ма-а-у…» тянущаяся речь, как у пьяного."},
+    {"thai": "ʔaw", "english": "To take", "associationEn": "Aw, I'll take it.", "associationRu": "«Оу, возьму!» — тянемся взять."}
+  ]
+}
