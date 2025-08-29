@@ -1,0 +1,123 @@
+{
+  "lessonNumber": 5,
+  "vocabulary": [
+    {
+      "thai": "tɔɔnníi",
+      "english": "Now",
+      "associationEn": "",
+      "associationRu": ""
+    },
+    {
+      "thai": "pə̀ət",
+      "english": "To open",
+      "associationEn": "",
+      "associationRu": ""
+    },
+    {
+      "thai": "rʉ̂yaŋ",
+      "english": "Have…yet?",
+      "associationEn": "",
+      "associationRu": ""
+    },
+    {
+      "thai": "yaŋ mây",
+      "english": "Not…yet",
+      "associationEn": "",
+      "associationRu": ""
+    },
+    {
+      "thai": "jà",
+      "english": "Will",
+      "associationEn": "",
+      "associationRu": ""
+    },
+    {
+      "thai": "wan thîi",
+      "english": "Date",
+      "associationEn": "",
+      "associationRu": ""
+    },
+    {
+      "thai": "thâwrày",
+      "english": "How much?",
+      "associationEn": "",
+      "associationRu": ""
+    },
+    {
+      "thai": "phʉ̂an",
+      "english": "Friend",
+      "associationEn": "",
+      "associationRu": ""
+    },
+    {
+      "thai": "yàak",
+      "english": "To want",
+      "associationEn": "",
+      "associationRu": ""
+    },
+    {
+      "thai": "rian",
+      "english": "To study / To learn",
+      "associationEn": "",
+      "associationRu": ""
+    },
+    {
+      "thai": "khâa rian",
+      "english": "Tuition",
+      "associationEn": "",
+      "associationRu": ""
+    },
+    {
+      "thai": "bəə thoo",
+      "english": "Telephone number",
+      "associationEn": "",
+      "associationRu": ""
+    },
+    {
+      "thai": "rooŋrian",
+      "english": "School",
+      "associationEn": "",
+      "associationRu": ""
+    },
+    {
+      "thai": "bəə",
+      "english": "Number",
+      "associationEn": "",
+      "associationRu": ""
+    }
+  ],
+  "phrases": [
+    {
+      "thai": "Q: rooŋrian pə̀ət rʉ́yaŋ (school open have.. yet?)\n(+): pə̀ət lɛ́ɛw\n(-): yaŋ mây pə̀ət",
+      "english": "Q: Has the school opened yet?\nA: +/-"
+    },
+    {
+      "thai": "Q: khun kin khâaw rʉ́yaŋ (you eat rice have.. yet?)\n(+): kin lɛ́ɛw\n(-): yaŋ mây kin",
+      "english": "Q: Have you eaten already?\nA: +/-"
+    },
+    {
+      "thai": "Q: khâaw phàt thâwrày (fried rice how much?)\nA: khâaw phàt sǎam sìp hâa bàat",
+      "english": "Q: How much is fried rice?\nA: Fried rice is 35 baht"
+    },
+    {
+      "thai": "Q: khâa rian thâwrày (fee school how much?)\nA: khâa rian hâa phan kâaw rɔ́ɔy kâaw sìp bàat",
+      "english": "Q: How much is the school fee?\nA: The school fee is 5990 baht"
+    },
+    {
+      "thai": "Q: rooŋrian pə̀ət wan thîi thâwrày (school open date how much?)\nA: rooŋrian pə̀ət wan thîi sìp hâa",
+      "english": "Q: What date will the school open?\nA: The school will open on the 15th"
+    },
+    {
+      "thai": "Q: wan níi wan thîi thâwrày (today date how much?)\nA: wan níi wan thîi yîi sìp",
+      "english": "Q: What date is it today?\nA: Today is the 20th"
+    },
+    {
+      "thai": "Q: bəə thoo rooŋrian bəə ʔaray (telephone number school number what?)\nA: bəə thoo rooŋrian bəə sǔun kâaw jèt sɔ̌ɔŋ sɔ̌ɔŋ pɛ̀ɛt pɛ̀ɛt nʉ̀ŋ jèt pɛ̀ɛt",
+      "english": "Q: What is the school's telephone number?\nA: The school's telephone number is 097-228-8178"
+    },
+    {
+      "thai": "Q: bəə thoo khun Lisa bəə ʔaray (telephone number Mrs. Lisa number what?)\nA: bəə thoo khun Lisa bəə sǔun pɛ̀ɛt nʉ̀ŋ sɔ̌ɔŋ sǎam sìi hâa hòk jèt pɛ̀ɛt",
+      "english": "Q: What is Lisa's telephone number?\nA: Lisa's telephone number is 081-234-5678"
+    }
+  ]
+}

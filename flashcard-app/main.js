@@ -3,13 +3,15 @@ import lesson1Data from './lesson1.json';
 import lesson2Data from './lesson2.json';
 import lesson3Data from './lesson3.json';
 import lesson4Data from './lesson4.json';
+import lesson5Data from './lesson5.json';
 
 // Store lesson data
 const lessonData = {
     1: lesson1Data,
     2: lesson2Data,
     3: lesson3Data,
-    4: lesson4Data
+    4: lesson4Data,
+    5: lesson5Data
 };
 
 // State management
@@ -65,7 +67,7 @@ function init() {
 function initializeLessonCheckboxes() {
     lessonCheckboxes.innerHTML = '';
     
-    [1, 2, 3, 4].forEach(lessonNum => {
+    [1, 2, 3, 4, 5].forEach(lessonNum => {
         const data = lessonData[lessonNum];
         const wordCount = data && data.vocabulary ? data.vocabulary.length : 0;
         const phraseCount = data && data.phrases ? data.phrases.length : 0;
